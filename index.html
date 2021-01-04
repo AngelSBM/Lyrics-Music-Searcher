@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+
+
+        <div class="row  bg-light p-3 rounded">
+
+            <!-- Columna izquierda -->
+
+            <div class="col-12 col-md-6">
+
+                <!-- Presentacion formulario -->
+
+                <h2 class="font-weight-bold text-center ">Búsqueda</h2>
+                <hr>
+                <p class="text-muted">
+                    Buscar por nombre de artista y canción
+                    <br>
+                    *Campos obligatorios
+                </p>
+                <p class="text-muted"></p>
+
+                <!-- Formulario -->
+
+                <form class="mb-3" id="formulario">
+                    <div class="form-group">
+                      <label for="artista">*Artista:</label>
+                      <input type="text" placeholder="Artista" class="form-control" id="artista">
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="cancion">*Canción:</label>
+                      <input type="text" class="form-control" placeholder="Nombre de la canción" id="cancion">
+                    </div>
+
+                    <div class="boton text-right">
+                        <button type="submit" class="btn">Buscar canción</button>                        
+                    </div>
+
+
+                </form>
+
+                <div class="mensajes" id="mensajes">
+                        
+                </div>
+
+            </div>
+
+
+            <!-- Columna Derecha -->
+
+            <div class="col-12 col-md-6">
+                <h3 id="letraTitulo" class="text-center text-monospace">Letra:</h3>
+
+                <div class="row p-3">
+                    <div class="col">
+                        <div id="resultado" class="text-monospace">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
